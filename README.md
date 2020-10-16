@@ -19,7 +19,7 @@
 
 	public String name;
 	
-2.其他类（pc、HardDisk、Test）放置在另一个包computer_lkl中。Test是主类涉及调用cpu类，所以需导入cpu类所在的包。<br/>	
+2.其他类（pc、HardDisk、Test）放置在另一个包computer_lkl中。<br/>	
 		
 	package computer_lkl;
 	import computer_lk1.cpu;
@@ -44,6 +44,19 @@
         pc.setHardDisk(hd);
         pc.show();
 	
+ 3.设置show()方法。
+ 	
+	void show(){
+
+        System.out.println("cpu's name is " + cpu.getName());
+
+        System.out.println("cpu's speed is " + cpu.getSpeed());
+
+        System.out.println("HardDisk's capacity is " + hd.getAmount() + "GB");
+
+        System.out.println("HardDisk's speed was " + hd.getSpeed());
+
+    }
 ## 4.实验结果
 
 	cpu's name is i7;
