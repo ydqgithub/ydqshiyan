@@ -1,8 +1,8 @@
 # ydqshiyan
 ## 1.实验内容
->1.用类描述计算机中的CPU的速度和硬盘的容量。
+* 1.用类描述计算机中的CPU的速度和硬盘的容量。
 
->2.要求：
+* 2.要求：
 * a.要求Java应用程序有4个类，名字分别是PC、CPU、HardDisk和Test，其中Test是主类；(基本要求)
 * b.类中定义不少于两个构造方法；
 * c.每个类定义不少于两个属性，切属性的类型应该多样化；
@@ -28,28 +28,20 @@
 	
 ## 4.核心方法
 
-1.实例化各类。
+1.实例化。
 	 
 	cpu cpu = new cpu();
         HardDisk hd = new HardDisk();
 	pc pc=new pc();
 	
-2.调用各方法，设置特定的值。
+2.调用方法。
 
 	cpu.setName("i7");
-
         cpu.setSpeed(2200);
-
         hd.setAmount(200);
-
         hd.setSpeed(5400, null);
-
-        pc pc = new pc();
-
         pc.setCpu(cpu);
-
         pc.setHardDisk(hd);
-
         pc.show();
 	
 ## 4.实验结果
@@ -60,7 +52,7 @@
         HardDisk's speed was 5400;
 	
 ## 5.实验感想
-   1.学会了各个权限修饰符的用法和含义。<br/>
-   2.学会了将一个项目中的不同类放入不同包中，调用另一个包中的方法时须先导入包。<br/>
-   3.学习了构造方法。<br/>
-   4.学会了类的实例化和调用方法。<br/>
+   1.学习了构造方法实例化和调用方法。<br/>
+   2.体会到了不同包中的各类关系。<br/>
+   3.学会了权限修饰符private protected 的用法和含义。<br/>
+   
